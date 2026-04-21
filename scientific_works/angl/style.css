@@ -1,0 +1,294 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #666;
+    --border-color: #ddd;
+    --background-light: #f9f9f9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.6;
+    margin: 20px;
+    max-width: 100%;
+    text-align: justify;
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.udk, .udc {
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.authors {
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.contacts {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.affiliation {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.abstract, .keywords {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--background-light);
+    border-radius: 5px;
+}
+
+.abstract h2, .keywords h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.abstract p, .keywords p {
+    margin: 0;
+}
+
+.abstract p:first-of-type, .keywords p:first-of-type {
+    font-weight: bold;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.section p {
+    margin-bottom: 15px;
+    text-indent: 20px;
+}
+
+.formula {
+    text-align: center;
+    margin: 20px 0;
+    font-style: italic;
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.image-placeholder {
+    text-align: center;
+    margin: 20px 0;
+    font-style: italic;
+    color: var(--secondary-color);
+    padding: 20px;
+    border: 1px dashed var(--border-color);
+}
+
+.figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--border-color);
+}
+
+.figure-caption {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 14px;
+    overflow-x: auto;
+    display: block;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 10px 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--background-light);
+    text-align: center;
+    font-weight: bold;
+}
+
+.references {
+    margin-top: 30px;
+}
+
+.references h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.reference-item {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-indent: -20px;
+    font-size: 14px;
+}
+
+.page-number {
+    text-align: center;
+    font-style: italic;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+ol, ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    h1 {
+        font-size: 16px;
+    }
+    
+    .authors, .contacts, .affiliation {
+        text-align: left;
+    }
+    
+    .udk, .udc {
+        text-align: left;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 8px 5px;
+    }
+    
+    .abstract, .keywords {
+        padding: 10px;
+    }
+    
+    .section p {
+        text-indent: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+        margin: 5px;
+    }
+    
+    h1 {
+        font-size: 14px;
+    }
+    
+    .abstract h2, .keywords h2, .section h2, .references h2 {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 6px 4px;
+        font-size: 11px;
+    }
+    
+    .reference-item {
+        font-size: 12px;
+    }
+    
+    .figure-caption, .page-number {
+        font-size: 12px;
+    }
+    
+    .section p {
+        text-indent: 10px;
+    }
+}
+
+/* Стили для печати */
+@media print {
+    body {
+        margin: 0;
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    .container {
+        max-width: 100%;
+    }
+    
+    .abstract, .keywords {
+        background-color: white;
+        border: 1px solid #000;
+    }
+    
+    .figure img {
+        border: 1px solid #000;
+    }
+    
+    .image-placeholder {
+        border: 1px dashed #000;
+    }
+}

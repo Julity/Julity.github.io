@@ -1,0 +1,112 @@
+.article1{
+    font-size: 12pt;
+    font-family: "Times New Roman", serif;
+    text-align:justify;
+    text-indent: 35.45pt;
+}
+
+.article2{
+    font-size: 14pt;
+    font-family: "Times New Roman", serif;
+    text-align:justify;
+    text-indent: 35.45pt;
+}
+
+ul, ol{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  list-style-position: inside;
+  padding-inline-start: 0px;
+}
+
+p{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.heading{
+    text-align: center; 
+    text-indent: 0pt;
+}
+
+.topic{
+    text-transform: uppercase;
+}
+
+.backtolib{
+    text-indent: 0pt; 
+    font: 14pt Times New Roman, serif;
+}
+
+.img{
+    text-align: center;
+}
+
+.library{
+    text-align: center;
+}
+
+.zero_indent {
+    text-indent: 0px;
+}
+
+/* Дополнительные стили для нового дизайна */
+.hdr {
+    margin: 10px 0;
+}
+
+.hdr a {
+    color: #4a4a4a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.hdr a:hover {
+    color: #2a2a2a;
+    text-decoration: underline;
+}
+
+#photo-section img,
+#photo-section video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.content-block ol,
+.content-block ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.content-block li {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.content-block p {
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+.skills-column ol,
+.skills-column ul {
+    margin: 5px 0 15px 0;
+}
+
+/* Адаптивные шрифты */
+@media (max-width: 768px) {
+    .article1, .article2 {
+        font-size: 11pt;
+    }
+    
+    .hdr {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .article1, .article2 {
+        font-size: 10pt;
+    }
+}
